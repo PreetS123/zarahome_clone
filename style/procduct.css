@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: ZH-Sans,Arial,'Lucida Sans Unicode',sans-serif;
+}
+#container{
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+#left_img_div{
+    /* border: 1px solid red; */
+    flex: 37;
+}
+#left_img_div img{
+    width: 100%;
+}
+#right_info_div{
+    /* border: 1px solid red; */
+    flex: 30;
+}
+#content{
+    margin: 10px 75px;
+}
+#name{
+    /* border: 1px solid black; */
+    font-size: 140%;
+    font-weight:550;
+    margin: 127px 0px 27px ;
+}
+#price{
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    font-weight:550;
+    letter-spacing: 1px;
+    font-size: 110%;
+}
+#ref{
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    font-size: 70%;
+}
+#color-div{
+    display: flex;
+    width: 63px;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+#color-div div{
+    margin: 5px 0px;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+#description{
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 90%;
+    line-height: 30px;
+}
+#size{
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+#size-heading{
+    border-bottom: 1PX solid black;
+    padding-bottom: 7PX;
+    font-size: 90%;
+    margin-bottom: 20PX;
+}
+.size_parameter{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+}
+#size_guide{
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: right;
+    font-size: 70%;
+    letter-spacing: 1px;
+}
+#add_to_basket{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 7px;
+    font-size: 85%;
+}
+#product_details{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    font-size: 65%;
+    letter-spacing: 2px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#MIGHT_BE_INTERESTED{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#related{
+    font-size: 90%;
+}
+#MIGHT_BE_INTERESTED img{
+    width: 100%;
+}
+#related_name{
+    font-size: 80%;
+}
+#related_price{
+    font-size: 85%;
+}
+#product_details{
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
