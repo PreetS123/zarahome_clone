@@ -44,16 +44,17 @@
 }
 #color-div{
     display: flex;
-    width: 63px;
+    width: 53px;
     /* border: 1px solid black; */
-    justify-content: space-between;
+    justify-content:space-evenly;
+    padding-top: 5px;
 }
 #color-div div{
     margin: 5px 0px;
     border: 1px solid black;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 #description{
     /* border: 1px solid black; */
