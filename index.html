@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LANDING PAGE</title>
+    <style>
+               #nav{
+                   display: grid;
+                   grid-template-columns: repeat(3,1fr);
+                   height: 120px;
+                   width: 95%;
+                   justify-content: space-around;
+               }
+               #lst{
+                   display: flex;
+                   justify-content: end;
+               }
+    </style>
 </head>
 <body>
-      <h1>ZARA HOME</h1>
+    <div id="nav">
+    </div>
 </body>
 </html>
+<script  type="module">
+    import navbar from "./components/navbar.js";
+    //  console.log(navbar);
+    var navbar_div= document.getElementById("nav");
+    navbar_div.innerHTML=navbar();
+
+</script>
