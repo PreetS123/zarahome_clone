@@ -2,94 +2,169 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: ZH-Sans,Arial,'Lucida Sans Unicode',sans-serif;
 }
 #container{
     border: 1px solid black;
+    padding: 0px 30px;
 }
 #top{
-    border: 1px solid red;
-    height: 60px;
+    /* border: 1px solid red; */
+    height: 150px;
     display: flex;
+    align-items: flex-end;
 }
 #SHOPPING-BASKET{
     flex: 10;
-    border: 1px solid red;
+    border-bottom: 3px solid rgb(73, 73, 73);
+    text-align: center;
+    height: 30px;
+    font-size: 90%;
 }
 #BUY-LATER{
     flex: 10;
-    border: 1px solid red;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    height: 30px;
+    font-size: 90%;
 }
 #content{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
+    padding: 10px 0px;
 }
 #items{
-    flex: 35;
-    border: 1px solid green;
+    flex: 45;
+    /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 #cart-details{
     flex: 15;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#cart-details div{
+    width: 420px;
 }
 .card{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     height: 670px;
+    margin: 20px 0px;
+    margin-right: 20px;
 }
 .card img{
     width: 100%;
 }
 #name{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    font-size: 95%;
 }
 #price-div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
+    margin-top: 13px;
+    font-size: 90%;
+    margin-right: 10px;
 }
 #price{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #quantity{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    width: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#minus{
+    /* border: 1px solid black; */
+    font-size: 130%;
+    cursor: pointer;
+}
+#count{
+    border: 1px solid rgb(49, 49, 49);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+#plus{
+    /* border: 1px solid black; */
+    font-size: 130%;
+    cursor: pointer;
 }
 #ref1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-top: 13px;
+    font-size: 65%;
+    color: rgb(100, 100, 100);
 }
 #ref2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    font-size: 65%;
+    color: rgb(100, 100, 100);
 }
 #total-items{
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 120%;
+    font-weight: 600;
+    height: 40px;
+    color: rgb(44, 44, 44);
 }
 #total-price-including-tax-div{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     display: flex;
     justify-content: space-between;
+    padding:15px 0px;
+    font-size: 80%;
+    color: rgb(80, 80, 80);
 }
 #total-price-including-tax-title{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    height: 20px;
 }
 #total-price-including-tax-data{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    text-align: right;
+    height: 20px;
+    font-size: 120%;
 }
 #total-price-div{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
+    margin-top: 5px;
+    color: rgb(44, 44, 44);
 }
 #total-price-title{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
 }
 #total-price-data{
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
+    text-align: right;
 }
 #promo-code{
-    border:1px solid black;
+    /* border:1px solid black; */
+    margin-top: 50px;
+    font-size: 80%;
 }
 #process-order{
-    border: 1px solid black;
+    border: 1px solid rgb(41, 41, 41);
     text-align: center;
-    padding: 7px;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 72%;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(34, 34, 34);
 }
