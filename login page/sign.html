@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e69451082d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/login page/styles/signup.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="form-box">
+            <div id="top">
+                <i id="arrow-icon" onclick="window.location.href='login.html'" class="fa fa-chevron-left"></i>
+                <p class="text">CREATE YOUR ZARA HOME ACCOUNT</p>
+            </div>
+            <div class="button-box">
+                <input onclick="Individual()" id="Individual" type="button">
+                <label for="">Individual</label>
+                <input onclick="Company()" id="Company" type="button">
+                <label for="">Company</label>
+            </div>
+            <div id="Select">
+                <select class="select" aria-label="Default select example">
+                    <option selected>India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Shri-Lanka">Shri Lanka</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Maldivs">Maldivs</option>
+                    <option value="Nigar">Niger</option>
+                </select>
+            </div>
+
+            <form id="Indiviualreg" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required="required">
+                <input type="email" class="input-field" placeholder="E-mail" required="required">
+                <input type="password" class="input-field" placeholder="Password" required="required">
+                <div class="checkbox">
+                    <input type="checkbox" class="check-box"><span>I have read and accept the privacy policy</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="check-box"><span>I would like to receive news, notifications and
+                        offers from Zara Home.</span>
+                </div>
+                <button type="submit" id="Individualaccount" class="submit-btn">CREATE ACCOUNT</button>
+            </form>
+
+
+            <form id="Companyreg" class="input-group">
+                <input type="text" class="input-field" placeholder="Company name" required="required">
+                <input type="text" class="input-field" placeholder="VAT" required="required">
+                <input type="text" class="input-field" placeholder="Name" required="required">
+                <input type="email" class="input-field" placeholder="E-mail" required="required">
+                <input type="password" class="input-field" placeholder="Password" required="required">
+                <div class="checkbox">
+                    <input type="checkbox" class="check-box"><span>I have read and accept the privacy policy</span>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="check-box"><span>I would like to receive news, notifications and
+                        offers from Zara Home.</span>
+                </div>
+                <button type="submit" id="companyaccount" class="submit-btn">CREATE ACCOUNT</button>
+            </form>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let x = document.getElementById("Indiviualreg");
+    let y = document.getElementById("Companyreg");
+
+
+    function Company() {
+        x.style.left = "-97%";
+        y.style.left = "0%";
+      
+    }
+    function Individual() {
+        x.style.left = "0%";
+        y.style.left = "97%";
+    }
+
+</script>
