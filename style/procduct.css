@@ -4,15 +4,32 @@
     box-sizing: border-box;
     font-family: ZH-Sans,Arial,'Lucida Sans Unicode',sans-serif;
 }
+body::-webkit-scrollbar {
+    width: 9px;
+  }  
+body::-webkit-scrollbar-thumb {
+    background: rgb(26, 26, 26); 
+    /* border-radius: 10px; */
+    border: 2px solid white;
+  }
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(26, 26, 26);
+  }
 #container{
     /* border: 5px solid black; */
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
+    height: 1700px;
 }
 #left_img_div{
     /* border: 1px solid red; */
     flex: 37;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+#left_img_div::-webkit-scrollbar{
+    width: 0px;
 }
 #left_img_div img{
     width: 100%;
@@ -20,33 +37,39 @@
 #right_info_div{
     /* border: 1px solid red; */
     flex: 30;
+    height: 1700px;
 }
 #content{
-    margin: 10px 75px;
+    margin: 10px 65px 0px 78px;
+    /* border: 1px solid black; */
 }
 #name{
     /* border: 1px solid black; */
     font-size: 140%;
     font-weight:550;
     margin: 127px 0px 27px ;
+    color: rgba(14, 14, 14, 0.884);
 }
 #price{
     /* border: 1px solid black; */
     margin-bottom: 20px;
     font-weight:550;
-    letter-spacing: 1px;
-    font-size: 110%;
+    font-size: 115%;
+    color: rgba(14, 14, 14, 0.884);
 }
 #ref{
     /* border: 1px solid black; */
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-size: 70%;
+    color: #555555;
+    letter-spacing: 0.3px;
 }
 #color-div{
     display: flex;
-    width: 53px;
+    width: 55px;
+    margin-top: 5px;
     /* border: 1px solid black; */
-    justify-content:space-evenly;
+    justify-content:space-between;
     padding-top: 5px;
 }
 #color-div div{
@@ -55,78 +78,100 @@
     border-radius: 50%;
     height: 25px;
     width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#color-div img{
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
 }
 #description{
     /* border: 1px solid black; */
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    margin-bottom: 27px;
+    letter-spacing: 0.7px;
     font-size: 90%;
     line-height: 30px;
+    word-spacing: 0.7px;
+    line-height: 35px;
+    color: rgb(58, 58, 58);
 }
 #size{
-    border-bottom: 1px solid black;
+    border-bottom: 1PX solid rgb(110, 110, 110);
     margin-bottom: 20px;
+    font-weight: 600;
 }
 #size-heading{
-    border-bottom: 1PX solid black;
+    border-bottom: 1PX solid rgb(110, 110, 110);
     padding-bottom: 7PX;
-    font-size: 90%;
+    font-size: 87%;
     margin-bottom: 20PX;
+    color: rgb(145, 145, 145);
 }
 .size_parameter{
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 62.5px;
+    font-size: 86%;
+    padding-left: 5px;
+    padding-right: 13px;
+}
+#size div:last-child{
+    height: 40px;
 }
 #size_guide{
     /* border: 1px solid black; */
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 28px;
+    margin-top: 20px;
     text-align: right;
     font-size: 70%;
     letter-spacing: 1px;
+    padding-right: 4px;
+    color: rgb(94, 94, 94);
 }
 #add_to_basket{
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     text-align: center;
-    padding: 7px;
-    font-size: 85%;
+    padding: 9.5px;
+    font-size: 72.7%;
+    font-weight: 600;
 }
 #product_details{
-    border: 1px solid black;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-size: 65%;
-    letter-spacing: 2px;
-    height: 90px;
+    letter-spacing: 1.15px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: rgb(94, 94, 94);
 }
 #MIGHT_BE_INTERESTED{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 20px;
-    width: 300px;
-    height: 540px;
+    width: 280px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 #related{
-    font-size: 90%;
+    font-size: 79%;
+    margin-bottom: 17px;
+    font-weight:normal;
 }
 #MIGHT_BE_INTERESTED img{
     width: 100%;
 }
 #related_name{
-    font-size: 80%;
+    font-size: 70.8%;
 }
 #related_price{
-    font-size: 85%;
-}
-#product_details{
-    border: 1px solid black;
-    margin-bottom: 20px;
+    font-size: 78%;
 }

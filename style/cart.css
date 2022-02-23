@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container{
+    border: 1px solid black;
+}
+#top{
+    border: 1px solid red;
+    height: 60px;
+    display: flex;
+}
+#SHOPPING-BASKET{
+    flex: 10;
+    border: 1px solid red;
+}
+#BUY-LATER{
+    flex: 10;
+    border: 1px solid red;
+}
+#content{
+    border: 1px solid blue;
+    display: flex;
+}
+#items{
+    flex: 35;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#cart-details{
+    flex: 15;
+    border: 1px solid green;
+}
+.card{
+    border: 1px solid brown;
+    height: 670px;
+}
+.card img{
+    width: 100%;
+}
+#name{
+    border: 1px solid black;
+}
+#price-div{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#price{
+    border: 1px solid black;
+}
+#quantity{
+    border: 1px solid black;
+}
+#ref1{
+    border: 1px solid black;
+}
+#ref2{
+    border: 1px solid black;
+}
+#total-items{
+    border: 1px solid gray;
+}
+#total-price-including-tax-div{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+#total-price-including-tax-title{
+    border: 1px solid gray;
+}
+#total-price-including-tax-data{
+    border: 1px solid gray;
+}
+#total-price-div{
+    border: 1px solid teal;
+    display: flex;
+    justify-content: space-between;
+}
+#total-price-title{
+    border: 1px solid teal;
+}
+#total-price-data{
+    border: 1px solid teal;
+}
+#promo-code{
+    border:1px solid black;
+}
+#process-order{
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+}
