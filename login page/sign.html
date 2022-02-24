@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="signin_container">
         <div id="form-box">
             <div id="top">
                 <i id="arrow-icon" onclick="window.location.href='login.html'" class="fa fa-chevron-left"></i>
@@ -37,102 +37,37 @@
                     <option value="Nigar">Niger</option>
                 </select>
             </div>
-            <!-- <div class="firsr-form"> -->
-            <form id="Indiviualreg" class="input-group">
-                <input id="name" type="text" class="input-field" placeholder="Name" required="required">
-                <input id="email" type="email" class="input-field" placeholder="E-mail" required="required">
-                <input id="password" type="password" class="input-field" placeholder="Password" required="required">
-                <div class="checkbox">
-                    <input type="checkbox" class="check-box"><span>I have read and accept the privacy policy</span>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" class="check-box"><span>I would like to receive news, notifications and
-                        offers from Zara Home.</span>
-                </div>
-
+            <div>
+                <form id="Indiviualreg" class="input-group">
+                    <input id="name" type="text" class="input-field" placeholder="Name" required="required">
+                    <input id="email" type="email" class="input-field" placeholder="E-mail" required="required">
+                    <input id="password" type="password" class="input-field" placeholder="Password" required="required">
+                    <div class="checkbox">
+                        <input type="checkbox" class="check-box"><span>I have read and accept the privacy policy</span>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="check-box"><span>I would like to receive news, notifications and
+                            offers from Zara Home.</span>
+                    </div>
+                </form>
+                <button onclick="Register()" type="submit" id="Individualaccount" class="submit-btn">CREATE
+                    ACCOUNT</button>
+            </div>
+            <div>
+                <form id="Companyreg" class="input-group1">
+                    <input type="text" class="input-field1" placeholder="Company name" required="required">
+                    <input type="text" class="input-field1" placeholder="VAT" required="required">
+                    <input type="text" class="input-field1" placeholder="Name" required="required">
+                    <input type="email" class="input-field1" placeholder="E-mail" required="required">
+                    <input type="password" class="input-field1" placeholder="Password" required="required">
+                    <button type="submit" id="companyaccount" class="submit-btn">CREATE ACCOUNT</button>
+            </div>
             </form>
-
-            <!-- <button onclick="Register()" type="submit" id="Individualaccount" class="submit-btn">CREATE
-                ACCOUNT</button> -->
-            <!-- </div> -->
-
-
-
-
-            <form id="Companyreg" class="input-group">
-                <input type="text" class="input-field" placeholder="Company name" required="required">
-                <input type="text" class="input-field" placeholder="VAT" required="required">
-                <input type="text" class="input-field" placeholder="Name" required="required">
-                <input type="email" class="input-field" placeholder="E-mail" required="required">
-                <input type="password" class="input-field" placeholder="Password" required="required">
-                <div class="checkbox">
-                    <input type="checkbox" class="check-box"><span>I have read and accept the privacy policy</span>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" class="check-box"><span>I would like to receive news, notifications and
-                        offers from Zara Home.</span>
-                </div>
-            </form>
-            <!-- <button type="submit" id="companyaccount" class="submit-btn">CREATE ACCOUNT</button> -->
-
-            <!-- <button>login</button> -->
         </div>
-        <button type="submit" id="companyaccount" class="submit-btn">CREATE ACCOUNT</button>
-
     </div>
 </body>
 
 </html>
-<script>
-    let x = document.getElementById("Indiviualreg");
-    let y = document.getElementById("Companyreg");
-
-
-    function Company() {
-        x.style.left = "-97%";
-        y.style.left = "0%";
-
-    }
-    function Individual() {
-        x.style.left = "0%";
-        y.style.left = "97%";
-    }
-    //api link - https://masai-api-mocker.herokuapp.com/
-    //url - "https://masai-api-mocker.herokuapp.com/auth/register"
-    // url = "https://masai-api-mocker.herokuapp.com/auth/login"
-
-
-    async function Register() {
-        try {
-            console.log("ttttt")
-            let register_data = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                password: document.getElementById("password").value,
-            }
-
-            register_data = JSON.stringify("register_data");
-
-            let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register", {
-
-                method: 'POST',
-                body: register_data,
-                headers: {
-                    "Content-Type": "application/json"
-                },
-            });
-            let data = await res.json();
-            console.log("data", data);
-        }
-
-
-
-
-        catch (err) {
-            console.log(err)
-        }
-    }
-
-
+<script src="/login page/scripts/signup.js">
 
 </script>

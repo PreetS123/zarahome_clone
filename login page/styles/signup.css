@@ -5,40 +5,28 @@ body {
     font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
 }
 
-#container {
+#signin_container {
     width: 50%;
     margin: auto;
-    margin-top: 3%;
-    border: 1px solid red;
+    margin-top: 1%;
     background: #fff;
-  
-
+    border:1px solid transparent;
 }
-
-/* .css {
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    color: #1E1E1E;
-    line-height: 1.35em;
-    letter-spacing: 0em;
-
-} */
 
 #form-box {
     width: 95%;
     margin: auto;
     margin-top: 40px;
     position: relative;
-    height: 520px;
+    height: 620px;
     overflow: hidden;
     color: #1E1E1E;
+    
 }
 
 #top {
     width: 87%;
     display: flex;
-    /* border: 3px solid grey; */
     justify-content: center;
     align-items: center;
 }
@@ -48,7 +36,6 @@ body {
 }
 
 .button-box {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,12 +51,9 @@ body {
     border: 1px solid black;
     background-color: #fff;
     color: #1E1E1E;
-    /* cursor: pointer; */
-
 }
 
 #Select {
-    /* border:2px solid blue; */
     width: 60%;
     margin: auto;
 }
@@ -92,12 +76,18 @@ body {
     position: absolute;
     transition: .5s;
     color: #1E1E1E;
-    /* background-color: aqua;
-    border: 5px solid teal; */
     margin-bottom: 30px;
-    /* cursor: pointer; */
 }
 
+.input-group1 {
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+    transition: .5s;
+    color: #1E1E1E;
+    margin-bottom: 30px;
+    margin-top:-5%; 
+}
 .input-field {
     width: 95%;
     margin: 10px 0 10px 0;
@@ -113,8 +103,27 @@ body {
     color: #000000;
     line-height: 1.85em;
     letter-spacing: 0em;
+    cursor: pointer;
+}
+.input-field1{
+    width: 95%;
+    margin: 8px 0 8px 0;
+    padding: 10px;
+    border-top: 0;
+    border-bottom: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    line-height: 1.85em;
+    letter-spacing: 0em;
 /* cursor: pointer; */
 }
+
+
 .checkbox {
     display: flex;
     width: 100%;
@@ -143,21 +152,27 @@ span {
 }
 
 .submit-btn:hover {
-    background-color: teal;
+    background-color: black;
     color: white;
 } 
 
  .submit-btn {
-    width: 100%;
+    width: 60%;
+    justify-content: center;
     background-color: white;
     padding: 10px;
-    margin: 20px 0 40px 0;
+    margin: auto;
     outline: 0;
     border: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    top:340px;
     border: 1px solid black;
     margin-top: 0;
 } 
+
 
 #Indiviualreg {
     left: 0%;
@@ -166,11 +181,3 @@ span {
 #Companyreg {
     left: 97%;
 }
-/* .firsr-form{
-    display: flex;
-    border:1px solid blue;
-    position: relative;
-    margin-bottom: 20px;
-    flex-direction:column;
-   
-} */
