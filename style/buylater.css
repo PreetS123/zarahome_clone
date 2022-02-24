@@ -114,9 +114,7 @@
     font-size: 90%;
     margin-right: 10px;
 }
-#price{
-    /* border: 1px solid black; */
-}
+
 #quantity{
     /* border: 1px solid black; */
     width: 70px;
@@ -189,9 +187,7 @@
     margin-top: 5px;
     color: rgb(44, 44, 44);
 }
-#total-price-title{
-    /* border: 1px solid teal; */
-}
+
 #total-price-data{
     /* border: 1px solid teal; */
     text-align: right;
