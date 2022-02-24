@@ -30,7 +30,7 @@ body {
     margin: auto;
     margin-top: 40px;
     position: relative;
-    height: 700px;
+    height: 520px;
     overflow: hidden;
     color: #1E1E1E;
 }
@@ -92,6 +92,9 @@ body {
     position: absolute;
     transition: .5s;
     color: #1E1E1E;
+    /* background-color: aqua;
+    border: 5px solid teal; */
+    margin-bottom: 30px;
     /* cursor: pointer; */
 }
 
@@ -140,11 +143,11 @@ span {
 }
 
 .submit-btn:hover {
-    background-color: #000;
+    background-color: teal;
     color: white;
-}
+} 
 
-.submit-btn {
+ .submit-btn {
     width: 100%;
     background-color: white;
     padding: 10px;
@@ -153,7 +156,8 @@ span {
     border: none;
     display: block;
     border: 1px solid black;
-}
+    margin-top: 0;
+} 
 
 #Indiviualreg {
     left: 0%;
@@ -162,3 +166,11 @@ span {
 #Companyreg {
     left: 97%;
 }
+/* .firsr-form{
+    display: flex;
+    border:1px solid blue;
+    position: relative;
+    margin-bottom: 20px;
+    flex-direction:column;
+   
+} */
