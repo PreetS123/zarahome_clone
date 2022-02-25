@@ -175,12 +175,18 @@ body::-webkit-scrollbar-thumb:hover {
     color: rgb(94, 94, 94);
 }
 #add_to_basket{
-    border: 1px solid black;
+    border: 1px solid rgb(51, 51, 51);
     margin-bottom: 7px;
     text-align: center;
     padding: 9.5px;
     font-size: 72.7%;
     font-weight: 600;
+    color: rgb(54, 54, 54);
+}
+#add_to_basket:hover {
+    background-color: black;
+    color: white;
+    transition: 0.7s;
 }
 #product_details{
     margin-bottom: 50px;

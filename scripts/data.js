@@ -342,3 +342,21 @@ var data_footwear_kids=[
      }
 
 ]
+
+
+
+
+function getData(input){
+      
+      if(input=="data_footwear_women"){
+            return data_footwear_women;
+      }
+      if(input=="data_footwear_men"){
+            return data_footwear_men;
+      }
+      if(input=="data_footwear_kids"){
+            return data_footwear_kids;
+      }
+}
+
+export default getData;
