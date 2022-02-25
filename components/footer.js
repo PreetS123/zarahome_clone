@@ -54,6 +54,8 @@ function footerZara() {
         <a href="#"><p>GUEST PURCHASE</p></a>
     </div>
 </div>
+
+
     `;
 }
 export default footerZara
