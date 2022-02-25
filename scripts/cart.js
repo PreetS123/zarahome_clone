@@ -2,10 +2,10 @@
 
 
 function populateInCartPage(){
-    let cart=JSON.parse(localStorage.getItem("basketArray"))
+    let cart=JSON.parse(localStorage.getItem("basketArray")) ||[]
     
     document.getElementById("items").innerHTML=""
-    cart.map((elem)=>{
+    cart.map((elem,index)=>{
 
         var image=document.createElement("img");
         image.src=elem.imagelink1
@@ -23,6 +23,7 @@ function populateInCartPage(){
         var buy_later_btn=document.createElement("div");
         buy_later_btn.className="buy-later-btn"
         buy_later_btn.textContent="BUY LATER"
+        buy_later_btn.addEventListener("click",()=>{addToBuylater(elem)})
 
         var fab_icon=document.createElement("div");
         fab_icon.className="material-icons fab-icon"
@@ -31,6 +32,7 @@ function populateInCartPage(){
         var cross_icon=document.createElement("div");
         cross_icon.className="material-icons cross-icon";
         cross_icon.textContent="close"
+        cross_icon.addEventListener("click",()=>{removeItems(index)})
 
         var txt=document.createElement("div");
         txt.className="txt";
@@ -85,3 +87,21 @@ function populateInCartPage(){
     })
 }
 populateInCartPage()
+
+
+function removeItems(index){
+    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    cart.splice(index,1);
+    localStorage.setItem("basketArray",JSON.stringify(cart))
+    populateInCartPage()
+}
+
+
+function addToBuylater(elem){
+    var buylater=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
+    buylater.push(elem);
+    localStorage.setItem("buylaterArray",JSON.stringify(buylater))
+
+}
+
+
