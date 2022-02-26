@@ -99,7 +99,7 @@ populateInbuylaterPage()
 
 
 function removeItems(index){
-    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
     buylater.splice(index,1);
     localStorage.setItem("buylaterArray",JSON.stringify(buylater))
     populateInbuylaterPage()
@@ -122,7 +122,7 @@ function addToBasket(elem,index){
 }
 
 function cartCount(){
-    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    let cart=JSON.parse(localStorage.getItem("basketArray"))||[];
     let count=0;
     for(let i of cart){
         count+=(i.qty)
@@ -133,7 +133,7 @@ cartCount()
 
 
 function buylaterCounter(){
-    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
     let count=0;
     for(let i of buylater){
         count+=(i.qty)
@@ -165,7 +165,7 @@ function increaseQty(elem,array){
 
 
 function emptybuylater(){
-    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
     if(buylater.length==0){
         let empty_card=document.createElement("div")
         empty_card.id="empty-card"
