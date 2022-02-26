@@ -121,6 +121,12 @@ function removeItemsfromWishlist(index){
 
 function addToCartFromWishlist(elem,index){
     let cart=JSON.parse(localStorage.getItem("basketArray")) ||[];
-
+    var matched=false;
+    for(let i=0; i<cart.length; i++){
+        if(elem.ref==cart[i].ref){cart[i].qty+=elem.qty; matched=true;}
+    }
+    if(matched==false){cart.push(elem);}
+    localStorage.setItem("basketArray",JSON.stringify(cart));
+    
 }
 </script>
