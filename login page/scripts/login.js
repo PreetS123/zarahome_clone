@@ -1,3 +1,11 @@
+
+import { navbar, footer } from "/Home/components/navbar.js"
+console.log(navbar)
+let nav_div = document.getElementById("nav-div");
+ nav_div.innerHTML = navbar();
+
+
+
 document.querySelector("form").addEventListener("submit", signin);
 let rus = JSON.parse(localStorage.getItem("userItms"));
 function signin(event) {
@@ -12,7 +20,7 @@ function signin(event) {
         }
     }
     if (flag == true) {
-        window.location.href = "sign.html";
+        window.location.href = "/Home/index.html";
     }
     else {
         alert("Invalid Credentials")

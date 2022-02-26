@@ -1,12 +1,18 @@
+import { navbar, footer } from "/Home/components/navbar.js"
+console.log(navbar)
+let nav_div = document.getElementById("nav-div");
+ nav_div.innerHTML = navbar();
+
 let x = document.getElementById("Indiviualreg");
 let y = document.getElementById("Companyreg");
 
+document.getElementById("Company").addEventListener("click",Company)
 
 function Company() {
     x.style.left = "-97%";
     y.style.left = "0%";
-
 }
+document.getElementById("Individual").addEventListener("click",Individual)
 function Individual() {
     x.style.left = "0%";
     y.style.left = "97%";
@@ -14,6 +20,8 @@ function Individual() {
 
 
 let userData = JSON.parse(localStorage.getItem("userItms")) || [];
+
+document.getElementById("Individualaccount").addEventListener("click",Register)
 
 function Register() {
     console.log("hii")
@@ -53,3 +61,4 @@ function Register() {
         alert("Invalid Credintials");
     }
 }
+

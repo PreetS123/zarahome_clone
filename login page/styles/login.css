@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
-    background: black;
+  
 }
 
 #login_container {
@@ -14,28 +14,29 @@ body {
     width: 63%;
     margin: auto;
     border: 1px solid black;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
-#left {
+#log-left {
     flex: 1;
     margin: 30px;
 
 }
 
-#right {
+#log-right {
     flex: 1;
     margin: 30px;
+ 
 }
 
-#left>.input-group {
+#log-left>.input-group {
     top: 180px;
     position: absolute;
     width: 30%;
     transition: .5s;
 }
 
-#left>p {
+#log-left>p {
     font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -47,8 +48,8 @@ body {
     margin-left: 0;
 }
 
-#left>h6,
-#right>h6 {
+#log-left>h6,
+#log-right>h6 {
     font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
     font-size: 14px;
     font-weight: 700;
