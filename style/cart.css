@@ -127,12 +127,12 @@ body::-webkit-scrollbar-thumb:hover {
     position: relative;
     top: -50px;
 }
-#name{
+.name{
     /* border: 1px solid black; */
     font-size: 95%;
 
 }
-#price-div{
+.price-div{
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
@@ -140,21 +140,21 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 90%;
     margin-right: 10px;
 }
-#price{
+.price{
     /* border: 1px solid black; */
 }
-#quantity{
+.quantity{
     /* border: 1px solid black; */
     width: 70px;
     display: flex;
     justify-content: space-evenly;
 }
-#minus{
+.minus{
     /* border: 1px solid black; */
     font-size: 130%;
     cursor: pointer;
 }
-#count{
+.count{
     border: 1px solid rgb(49, 49, 49);
     border-radius: 50%;
     height: 25px;
@@ -166,18 +166,18 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     background-color: rgb(34, 34, 34);
 }
-#plus{
+.plus{
     /* border: 1px solid black; */
     font-size: 130%;
     cursor: pointer;
 }
-#ref1{
+.ref1{
     /* border: 1px solid black; */
     margin-top: 13px;
     font-size: 65%;
     color: rgb(126, 126, 126);
 }
-#ref2{
+.ref2{
     /* border: 1px solid black; */
     font-size: 65%;
     color: rgb(126, 126, 126);

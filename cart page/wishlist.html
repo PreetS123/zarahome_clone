@@ -73,20 +73,6 @@
         var quantity=document.createElement("div")
         quantity.id="quantity";
 
-        var minus=document.createElement("div")
-        minus.id="minus";
-        minus.textContent="-"
-        minus.addEventListener("click",()=>{decreaseQty(elem,array)})
-
-        var count=document.createElement("div")
-        count.id="count";
-        count.textContent=elem.qty
-
-        var plus=document.createElement("div")
-        plus.id="plus";
-        plus.textContent="+"
-        plus.addEventListener("click",()=>{increaseQty(elem,array)})
-
         var ref1=document.createElement("div")
         ref1.id="ref1";
         ref1.textContent=elem.ref;
@@ -101,7 +87,6 @@
         fav_div.append(fav);
 
         price_div.append(price,quantity);
-        quantity.append(minus,count,plus);
         txt.append(name,price_div,ref1,ref2);
 
         card.append(image,fav_div,txt);

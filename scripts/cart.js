@@ -39,39 +39,39 @@ function populateInCartPage(){
         txt.className="txt";
 
         var name=document.createElement("div");
-        name.id="name";
+        name.className="name";
         name.textContent=elem.name;
 
         var price_div=document.createElement("div")
-        price_div.id="price-div";
+        price_div.className="price-div";
 
         var price=document.createElement("div")
-        price.id="price";
+        price.className="price";
         price.textContent=elem.price;
 
         var quantity=document.createElement("div")
-        quantity.id="quantity";
+        quantity.className="quantity";
 
         var minus=document.createElement("div")
-        minus.id="minus";
+        minus.className="minus";
         minus.textContent="-"
-        minus.addEventListener("click",()=>{decreaseQty(elem,array)})
+        minus.addEventListener("click",(e)=>{decreaseQty(elem,array,e)})
 
         var count=document.createElement("div")
-        count.id="count";
+        count.className="count";
         count.textContent=elem.qty
 
         var plus=document.createElement("div")
-        plus.id="plus";
+        plus.className="plus";
         plus.textContent="+"
-        plus.addEventListener("click",()=>{increaseQty(elem,array)})
+        plus.addEventListener("click",(e)=>{increaseQty(elem,array,e)})
 
         var ref1=document.createElement("div")
-        ref1.id="ref1";
+        ref1.className="ref1";
         ref1.textContent=elem.ref;
         
         var ref2=document.createElement("div")
-        ref2.id="ref2";
+        ref2.className="ref2";
 
 
 
@@ -128,12 +128,11 @@ function decreaseQty(elem,array){
     populateInCartPage()
     cartCounter()
 }
-function increaseQty(elem,array){
-
-        elem.qty++;
+function increaseQty(elem,array,e){
+    elem.qty++;
     localStorage.setItem("basketArray",JSON.stringify(array));
-    populateInCartPage()
-    cartCounter()
+    populateInCartPage();
+    cartCounter();
 }
 
 
@@ -158,7 +157,6 @@ cartCounter()
 
 
 document.getElementById("BUY-LATER").addEventListener("click",()=>{window.location.href="/cart page/buylater.html"})
-
 
 
 
@@ -212,5 +210,7 @@ function colorWishlisticon(elem){
         return "favorite_border";
 }
 //wishlist icon...
+
+
 
 document.getElementById("empty_basket_btn").addEventListener("click",()=>{localStorage.setItem("basketArray",JSON.stringify([]));emptycart();cartCounter()})
