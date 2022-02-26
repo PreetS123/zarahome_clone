@@ -5,7 +5,7 @@ function populateInbuylaterPage(){
 
     var buylater=JSON.parse(localStorage.getItem("buylaterArray"))||[]
     document.getElementById("items").innerHTML=""
-    buylater.map((elem,index)=>{
+    buylater.map((elem,index,array)=>{
 
         var card=document.createElement("div")
     card.className="card"
@@ -30,7 +30,7 @@ function populateInbuylaterPage(){
     var fab_icon=document.createElement("div");
     fab_icon.className="material-icons bag-icon"
     fab_icon.textContent="shopping_bag"
-    fab_icon.addEventListener("click",()=>{addToBasket(elem)})
+    fab_icon.addEventListener("click",()=>{addToBasket(elem,index)})
 
     var cross_icon=document.createElement("div");
     cross_icon.className="material-icons cross-icon";
@@ -57,14 +57,16 @@ function populateInbuylaterPage(){
     var minus=document.createElement("div")
     minus.id="minus";
     minus.textContent="-"
+    minus.addEventListener("click",()=>{decreaseQty(elem,array)})
 
     var count=document.createElement("div")
     count.id="count";
-    count.textContent="1"
+    count.textContent=elem.qty;
 
     var plus=document.createElement("div")
     plus.id="plus";
     plus.textContent="+"
+    plus.addEventListener("click",()=>{increaseQty(elem,array)})
 
     var ref1=document.createElement("div")
     ref1.id="ref1";
@@ -89,7 +91,7 @@ function populateInbuylaterPage(){
     })
 
 
-    
+    buylaterCounter()
 }
 
 populateInbuylaterPage()
@@ -99,15 +101,81 @@ populateInbuylaterPage()
 function removeItems(index){
     let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
     buylater.splice(index,1);
-    console.log("index",index)
     localStorage.setItem("buylaterArray",JSON.stringify(buylater))
     populateInbuylaterPage()
+    buylaterCounter()
+    emptybuylater()
 }
 
 
-function addToBasket(elem){
-    var cart=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
+function addToBasket(elem,index){
+    var cart=JSON.parse(localStorage.getItem("basketArray")) ||[];
     cart.push(elem);
     localStorage.setItem("basketArray",JSON.stringify(cart))
-
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    buylater.splice(index,1);
+    localStorage.setItem("buylaterArray",JSON.stringify(buylater))
+    populateInbuylaterPage()
+    buylaterCounter()
+    cartCount()
+    emptybuylater()
 }
+
+function cartCount(){
+    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    let count=0;
+    for(let i of cart){
+        count+=(i.qty)
+    }
+    document.getElementById("SHOPPING-BASKET").textContent=`SHOPPING BASKET (${count})`
+}
+cartCount()
+
+
+function buylaterCounter(){
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    let count=0;
+    for(let i of buylater){
+        count+=(i.qty)
+    }
+    document.getElementById("BUY-LATER").textContent=`BUY LATER (${count})`
+}
+
+
+document.getElementById("SHOPPING-BASKET").addEventListener("click",()=>{window.location.href="/cart page/cart.html"})
+
+
+export {buylaterCounter};
+
+
+function decreaseQty(elem,array){
+    if(elem.qty!==1){
+        elem.qty--;
+    }
+    localStorage.setItem("buylaterArray",JSON.stringify(array))
+    populateInbuylaterPage();
+    cartCount()
+}
+function increaseQty(elem,array){
+        elem.qty++;
+    localStorage.setItem("buylaterArray",JSON.stringify(array))
+    populateInbuylaterPage();
+    cartCount()
+}
+
+
+function emptybuylater(){
+    let buylater=JSON.parse(localStorage.getItem("buylaterArray"));
+    if(buylater.length==0){
+        let empty_card=document.createElement("div")
+        empty_card.id="empty-card"
+        empty_card.textContent="Your list of items saved for later is empty."
+
+        document.getElementById("items").append(empty_card)
+    }
+}
+emptybuylater()
+
+
+
+

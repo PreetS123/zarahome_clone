@@ -74,6 +74,12 @@ function mapDataToProductPage(){
     var related_name=document.getElementById("related_name")
     var related_price=document.getElementById("related_price")
 
+    let relatedArray=JSON.parse(localStorage.getItem("Footwear_Data"))
+    let index=Math.floor(Math.random()*12)
+    related_img.src=relatedArray[index].imagelink1
+    related_name.textContent=relatedArray[index].name
+    related_price.textContent=relatedArray[index].price
+
 }
 
 

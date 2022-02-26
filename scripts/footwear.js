@@ -43,7 +43,23 @@ function mapDataToFootwearPage(input){
 
 function addToBasket(elem){
     var basketArray=JSON.parse(localStorage.getItem("basketArray"))||[];
-    basketArray.push(elem);
+    if(basketArray.length==0){
+        basketArray.push(elem);
+    }
+    var match=false;
+    for(var i=0;i<basketArray.length;i++){
+        if(basketArray[i].ref==elem.ref ){
+           match=true;
+           break;
+        }
+    }
+    if(match){
+        basketArray[i].qty++;
+    }
+    else{
+        basketArray.push(elem);  
+    }
+    
     localStorage.setItem("basketArray",JSON.stringify(basketArray))
 
 }

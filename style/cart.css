@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb:hover {
     /* border: 1px solid blue; */
     display: flex;
     padding: 10px 0px;
+    flex-wrap: wrap;
 }
 #items{
     /* flex: 45; */
@@ -240,4 +241,27 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #process-order:hover{
     background-color: rgb(95, 95, 95);
+}
+
+#empty-card{
+    /* border: 1px solid black; */
+    height: 550px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+    font-size: 120%;
+}
+#empty_basket_btn{
+    border: 1px solid black;
+    font-size: 70%;
+    padding: 12px 30px;
+    font-weight: 600;
+    display: none;
+}
+#empty_basket_btn:hover{
+    background-color: black;
+    color: white;
 }

@@ -5,7 +5,7 @@ function populateInCartPage(){
     let cart=JSON.parse(localStorage.getItem("basketArray")) ||[]
     
     document.getElementById("items").innerHTML=""
-    cart.map((elem,index)=>{
+    cart.map((elem,index,array)=>{
 
         var image=document.createElement("img");
         image.src=elem.imagelink1
@@ -23,7 +23,7 @@ function populateInCartPage(){
         var buy_later_btn=document.createElement("div");
         buy_later_btn.className="buy-later-btn"
         buy_later_btn.textContent="BUY LATER"
-        buy_later_btn.addEventListener("click",()=>{addToBuylater(elem)})
+        buy_later_btn.addEventListener("click",()=>{addToBuylater(elem,index)})
 
         var fab_icon=document.createElement("div");
         fab_icon.className="material-icons fab-icon"
@@ -54,14 +54,16 @@ function populateInCartPage(){
         var minus=document.createElement("div")
         minus.id="minus";
         minus.textContent="-"
+        minus.addEventListener("click",()=>{decreaseQty(elem,array)})
 
         var count=document.createElement("div")
         count.id="count";
-        count.textContent="1"
+        count.textContent=elem.qty
 
         var plus=document.createElement("div")
         plus.id="plus";
         plus.textContent="+"
+        plus.addEventListener("click",()=>{increaseQty(elem,array)})
 
         var ref1=document.createElement("div")
         ref1.id="ref1";
@@ -85,6 +87,9 @@ function populateInCartPage(){
         document.getElementById("items").append(card);
         
     })
+    document.getElementById("empty_basket_btn").style.display="block"
+    
+
 }
 populateInCartPage()
 
@@ -94,14 +99,90 @@ function removeItems(index){
     cart.splice(index,1);
     localStorage.setItem("basketArray",JSON.stringify(cart))
     populateInCartPage()
+    cartCounter()
+    emptycart()
 }
 
-
-function addToBuylater(elem){
-    var buylater=JSON.parse(localStorage.getItem("buylaterArray")) ||[];
+import { buylaterCounter } from "/scripts/buylater.js";
+function addToBuylater(elem,index){
+    var buylater=JSON.parse(localStorage.getItem("buylaterArray")) || [];
     buylater.push(elem);
     localStorage.setItem("buylaterArray",JSON.stringify(buylater))
 
+    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    cart.splice(index,1);
+    localStorage.setItem("basketArray",JSON.stringify(cart))
+    populateInCartPage()
+    cartCounter()
+    buylaterCounter()
+
+}
+
+function decreaseQty(elem,array){
+    if(elem.qty!==1){
+        elem.qty--;
+    }
+    
+    localStorage.setItem("basketArray",JSON.stringify(array))
+    populateInCartPage()
+    cartCounter()
+}
+function increaseQty(elem,array){
+
+        elem.qty++;
+    localStorage.setItem("basketArray",JSON.stringify(array))
+    populateInCartPage()
+    cartCounter()
 }
 
 
+function cartCounter(){
+    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    var count=0;
+    var price=0
+    for(let i of cart){
+
+        count+=(i.qty)
+        price+=i.qty*i.price.slice(0,-2)
+    }
+    price=(price.toFixed(2));
+    document.getElementById("SHOPPING-BASKET").textContent=`SHOPPING BASKET (${count})`
+    document.getElementById("total-items").textContent=`${count} ITEMS`
+    document.getElementById("total-price-including-tax-data").textContent=`${price} €`
+    document.getElementById("total-price-data").textContent=`${price} €`
+   
+}
+
+cartCounter()
+
+
+document.getElementById("BUY-LATER").addEventListener("click",()=>{window.location.href="/cart page/buylater.html"})
+
+
+
+
+function emptycart(){
+    let cart=JSON.parse(localStorage.getItem("basketArray"));
+    if(cart.length==0){
+        document.getElementById("items").innerHTML="";
+        let empty_cart=document.createElement("div");
+        empty_cart.id="empty-card"
+
+        let image=document.createElement("img");
+        image.id="empty-image";
+        image.src="https://symbols-electrical.getvecta.com/stencil_265/34_heat-exchanger-steam-boiler.4aab0680bb.svg";
+
+        let empty_txt=document.createElement("div");
+        empty_txt.textContent="Your shopping basket is empty";
+        empty_txt.id="empty-txt";
+
+
+        empty_cart.append(image,empty_txt)
+        document.getElementById("items").append(empty_cart)
+        document.getElementById("cart-details").style.display="none"
+        document.getElementById("empty_basket_btn").style.display="none"
+    }
+}
+emptycart()
+
+document.getElementById("empty_basket_btn").addEventListener("click",()=>{localStorage.setItem("basketArray",JSON.stringify([]));emptycart();cartCounter()})

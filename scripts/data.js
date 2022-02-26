@@ -1,7 +1,8 @@
 var data_footwear_women=[
     {name:"KNOTTED FAUX SHEARLING SANDALS",
      price:"29.99 €",
-     ref:"REF. 1113/800",
+     qty:1,
+     ref:"REF. 1113/1",
      description:"Beige sandal-style house slippers with knotted faux shearling straps.",
      size:[29.99,29.99,29.99,29.99,29.99,29.99,29.99,29.99],
      product_details:{
@@ -18,7 +19,8 @@ var data_footwear_women=[
 
      {name:"FAUX FUR SLIPPERS",
      price:"25.99 €",
-     ref:"REF. 1020/800",
+     qty:1,
+     ref:"REF. 1113/2",
      description:"Ecru mule-style faux fur house slippers. Available in several colours. Rubber sole with lightweight wedges.",
      size:[25.99,25.99,25.99,25.99,25.99,25.99,25.99,25.99],
      product_details:{
@@ -35,7 +37,8 @@ var data_footwear_women=[
 
      {name:"Slippers with faux fur cross straps",
      price:"25.99 €",
-     ref:"REF. 1020/800",
+     qty:1,
+     ref:"REF. 1113/3",
      description:"Camel coloured sandal-style slippers with faux fur cross straps. Available in several colours.",
      size:[25.99,25.99,25.99,25.99,25.99,25.99,25.99,25.99],
      product_details:{
@@ -52,7 +55,8 @@ var data_footwear_women=[
 
      {name:"FUR SNAKESKIN PRINT SLIPPERS",
      price:"25.99 €",
-     ref:"REF. 1019/800",
+     qty:1,
+     ref:"REF. 1113/4",
      description:"Fur sandal-style house slippers with a snakeskin print.",
      size:[25.99,25.99,0,0,0,0,0,0],
      product_details:{
@@ -69,7 +73,8 @@ var data_footwear_women=[
 
      {name:"SLIPPERS WITH LEATHER DOUBLE STRAPS",
      price:"59.99 € ",
-     ref:"REF. 1006/800",
+     qty:1,
+     ref:"REF. 1113/5",
      description:"Blue leather sandals with double straps.JOIN LIFE Care for planet: 100% tanned leather Join Life. This leather was produced in tanneries awarded the Leather Working Group Gold or Silver certifications. LWG is a protocol that audits the tanning process in terms of energy and water use, waste management and the use of pre-approved chemicals in the tanning processes.",
      size:[59.99,59.99,59.99,0,0,0,0,0],
      product_details:{
@@ -86,7 +91,8 @@ var data_footwear_women=[
 
      {name:"CONTRAST LEATHER SANDALS",
      price:"35.99 € ",
-     ref:"REF. 1408/700",
+     qty:1,
+     ref:"REF. 1113/6",
      description:"Leather sandals with straps. They are very functional and follow the construction of this summer's must-have trend: thong or toe sandals. Sole height: 2.5 cm. Available in several colours.JOIN LIFE Care for planet: 100% tanned leather Join Life. This leather was produced in tanneries awarded the Leather Working Group Gold or Silver certifications. LWG is a protocol that audits the tanning process in terms of energy and water use, waste management and the use of pre-approved chemicals in the tanning processes.",
      size:[35.99,35.99,35.99,35.99,35.99,0,0,0],
      product_details:{
@@ -103,7 +109,8 @@ var data_footwear_women=[
 
      {name:"LEATHER ANIMAL PRINT SANDALS",
      price:"45.99 €",
-     ref:"REF. 1107/800",
+     qty:1,
+     ref:"REF. 1113/7",
      description:"Leather sandals with a leopard print double strap. Adjustable straps with buckles for a better fit.",
      size:[45.99,45.99,45.99,45.99,45.99,45.99,45.99,0],
      product_details:{
@@ -120,7 +127,8 @@ var data_footwear_women=[
 
      {name:"SATIN WEDGES",
      price:"35.99 € ",
-     ref:"REF. 1801/800",
+     qty:1,
+     ref:"REF. 1113/8",
      description:"Golden sateen wedge house slippers. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:[0,0,35.99,35.99,35.99,35.99,35.99,35.99],
      product_details:{
@@ -137,7 +145,8 @@ var data_footwear_women=[
 
      {name:"LEATHER PLATFORM SANDALS",
      price:"45.99 €",
-     ref:"REF. 1400/800",
+     qty:1,
+     ref:"REF. 1113/9",
      description:"“Leather sandals with straps. They are very functional and follow the construction of this summer’s must-have trend: thong or toe sandals. Sole height: 2.5 cm. Available in several colours. JOIN LIFE Care for planet: 100% leather tanned Join Life. This leather has been manufactured in tanneries that have been awarded the Leather Working Group Gold or Silver certifications. The LWG is a protocol that audits the tanning process in terms of energy and water use, waste management and use of pre-approved chemicals in the tanning processes.JOIN LIFE Care for planet: 100% tanned leather Join Life. This leather was produced in tanneries awarded the Leather Working Group Gold or Silver certifications. LWG is a protocol that audits the tanning process in terms of energy and water use, waste management and the use of pre-approved chemicals in the tanning processes.”",
      size:[45.99,45.99,45.99,45.99,0,0,0,0],
      product_details:{
@@ -154,7 +163,8 @@ var data_footwear_women=[
      
      {name:"DOUBLE-BUCKLE LEATHER SANDALS",
      price:"39.99 € ",
-     ref:"REF. 1104/700",
+     qty:1,
+     ref:"REF. 1113/10",
      description:"Black leather sandals featuring two straps with gold buckles.",
      size:[39.99,0,39.99,39.99,0,0,0,0],
      product_details:{
@@ -171,7 +181,8 @@ var data_footwear_women=[
 
      {name:"TIED CROCHET BALLET FLATS",
      price:"45.99 € ",
-     ref:"REF. 1305/700",
+     qty:1,
+     ref:"REF. 1113/11",
      description:"Ecru crochet ballet flats with straps tied around the ankle.",
      size:[0,45.99,45.99,45.99,0,0,0,0,0],
      product_details:{
@@ -188,7 +199,8 @@ var data_footwear_women=[
 
      {name:"BUCKLED FELT SLIPPERS",
      price:"25.99 € ",
-     ref:"REF. 1113/600",
+     qty:1,
+     ref:"REF. 1113/12",
      description:"Felt mule slippers with a lined buckle.JOIN LIFE Care for fiber: at least 25% recycled polyester. This fibre is made from recycled PET plastic, like that used in water bottles. By transforming this waste into a new resource, we reduce the production of virgin raw materials and the consumption of water, energy and natural resources.",
      size:[25.99,25.99,25.99,25.99,25.99,25.99,25.99,0],
      product_details:{
@@ -212,7 +224,8 @@ var data_footwear_women=[
 var data_footwear_men=[
     {name:"FABRIC HOUSE SLIPPER",
      price:"19.99 € ",
-     ref:"REF. 2033/800",
+     qty:1,
+     ref:"REF. 1114/1",
      description:"Fabric house slippers, available in a variety of colours. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:[19.99,19.99,19.99,19.99,19.99,19.99,19.99,19.99],
      product_details:{
@@ -229,7 +242,8 @@ var data_footwear_men=[
 
      {name:"BATH SLIPPERS",
      price:"19.99 € ",
-     ref:"REF. 2024/700",
+     qty:1,
+     ref:"REF. 1114/2",
      description:"Terry house slippers. Perfect for the bathroom. Available in various colours. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:[0,19.99,19.99,19.99,19.99,19.99,19.99,0],
      product_details:{
@@ -246,7 +260,8 @@ var data_footwear_men=[
 
      {name:"BATH SLIPPERS",
      price:"19.99 € ",
-     ref:"REF. 2024/700",
+     qty:1,
+     ref:"REF. 1114/3",
      description:"Terry house slippers. Perfect for the bathroom. Available in various colours. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:[0,19.99,19.99,19.99,19.99,19.99,0,0],
      product_details:{
@@ -263,7 +278,8 @@ var data_footwear_men=[
 
      {name:"LEATHER SLIPPERS",
      price:"35.99 € ",
-     ref:"REF. 2012/600",
+     qty:1,
+     ref:"REF. 1114/4",
      description:"Open black leather house slippers. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:[0,35.99,35.99,35.99,35.99,35.99,0,35.99],
      product_details:{
@@ -286,7 +302,8 @@ var data_footwear_men=[
 var data_footwear_kids=[
     {name:"FABRIC SANDALS",
      price:"17.99 € ",
-     ref:"REF. 3007/800",
+     qty:1,
+     ref:"REF. 1115/1",
      description:"White sandal-style house slippers. STARFIT®. Flexible technical foam insole, designed to offer greater comfort.",
      size:{"30/31":17.99,
            "32/33":0,
@@ -305,7 +322,8 @@ var data_footwear_kids=[
 
      {name:"WHALE PRINT SLIPPERS",
      price:"17.99 € ",
-     ref:"REF. 3403/700",
+     qty:1,
+     ref:"REF. 1115/2",
      description:"Blue slippers with a whale print. Pull tab on the heel for slipping on with ease.",
      size:{"20/21":17.99,
            "22/23":0,
@@ -324,7 +342,8 @@ var data_footwear_kids=[
 
      {name:"COLOURED SLIPPERS",
      price:"17.99 € ",
-     ref:"REF. 3402/700",
+     qty:1,
+     ref:"REF. 1115/3",
      description:"Pink slippers. Pull tab on the heel for slipping on with ease.",
      size:{"20/21":17.99,
            "22/23":17.99,
