@@ -117,13 +117,6 @@ display: flex;
 }
 
 h1 {
-
     text-align: left;
 }
 
-#submit {
-    background-color: black;
-    border: none;
-    color: wheat;
-    padding: 5px;
-}
