@@ -23,6 +23,14 @@ let userData = JSON.parse(localStorage.getItem("userItms")) || [];
 
 document.getElementById("Individualaccount").addEventListener("click",Register)
 
+
+
+
+
+
+
+
+
 function Register() {
     console.log("hii")
     let Name = document.getElementById("name").value;
@@ -60,5 +68,16 @@ function Register() {
     } else {
         alert("Invalid Credintials");
     }
+}
+document.getElementById("signin_container").style.display = "block";
+
+document.getElementById("container").addEventListener("click",close);
+function close(){
+        document.getElementById("signin_container").style.display = "none";
+
+document.getElementById("signin_container").addEventListener("click",()=>{
+    document.getElementById("signin_container").style.display = "block";
+
+})
 }
 

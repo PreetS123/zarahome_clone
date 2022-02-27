@@ -15,6 +15,7 @@ body {
 #navbar {
   margin: auto;
   width: 99%;
+  position: fixed;
 }
 .flex {
   display: flex;
@@ -37,17 +38,18 @@ body {
   color: white;
   font-weight: 100;
 }
+#left > span {
+  color: white;
+  padding: 20px 15px;
+  margin: 0 0 0 10px;
+}
 #middle {
   width: 36%;
 }
 #right {
   width: 15%;
 }
-#left > span {
-  color: white;
-  padding: 20px 15px;
-  margin: 0 0 0 10px;
-}
+
 .button {
   padding: 10px 10px 10px 10px;
   background-size: contain;
@@ -83,7 +85,13 @@ body {
   color: white;
   font-size: 18px;
   font-weight: 400;
+ text-align: center;
 }
+#right > div i{
+  font-size: 20px;
+  font-weight: 200;
+padding-top: 5px;
+} 
 section {
   width: 300px;
   height: 150vh;
@@ -93,7 +101,7 @@ section {
   display: none;
   position: relative;
   float: left;
-  margin-top: -90px;
+  /* margin-top: -80px; */
 }
 #nav-div:hover section {
   width: 330px;

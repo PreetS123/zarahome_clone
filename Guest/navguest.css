@@ -91,6 +91,11 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+#right > div i {
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 5px;
+}
 section {
   width: 300px;
   height: 80vh;

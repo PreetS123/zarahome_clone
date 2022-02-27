@@ -25,5 +25,9 @@ function signin(event) {
     else {
         alert("Invalid Credentials")
     }
+}
 
+document.getElementById("container").addEventListener("click",close);
+function close(){
+        document.getElementById("login_container").style.display = "none";
 }

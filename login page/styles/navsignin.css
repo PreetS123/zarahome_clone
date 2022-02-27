@@ -52,6 +52,11 @@ body {
 #right {
   width: 15%;
 }
+#right > div i{
+  font-size: 20px;
+  font-weight: 200;
+padding-top: 5px;
+} 
 
 #left > span {
   color: white;

@@ -22,7 +22,7 @@ body {
     font-size: 15px;
     font-weight: 700;
 }
-.select_opt {
+/* .select_opt {
     margin: 7% 0 0 0;
     margin-bottom: 0px;
     width: 100%;
@@ -31,7 +31,37 @@ body {
     margin: auto;
     margin: 15px 0;
     padding: 15px;
-}
+} */
+
+
+
+
+#Select {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .select_opt {
+    margin: 5% 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: auto;
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    padding: 10px;
+  }
+  .select_opt > option{
+      font-size: 14px;
+      margin:10px;
+  }
+
+
+
+
+
+
+
 #input_div>div {
     margin-bottom: 10%;
     margin-top: 4%;
