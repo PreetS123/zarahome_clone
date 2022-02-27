@@ -1,4 +1,10 @@
+import { navbar, footer } from "/Home/components/navbar.js"
+console.log(navbar)
+let nav_div = document.getElementById("nav-div");
+nav_div.innerHTML = navbar();
 
+let footer_div = document.getElementById("footer");
+footer_div.innerHTML = footer();
 
 
 function populateInbuylaterPage(){

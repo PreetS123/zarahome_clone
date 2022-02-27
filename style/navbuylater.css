@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
+}
+
+#container {
+  width: 100%;
+}
+
+#navbar {
+  margin: auto;
+  width: 99%;
+  margin:2% 0;
+  padding: 10px;;
+ 
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+ 
+}
+
+#logo1 {
+  width: 300px;
+  height: 100px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+#left {
+  flex: 49%;
+  margin: 1px;
+}
+#left > .material-icons {
+  color: white;
+}
+#zara {
+  font-family: ZH-Sans, Arial, "Lucida Sans Unicode", sans-serif;
+  font-size: 170%;
+  letter-spacing: 15px;
+  color: black;
+  font-weight: 300;
+}
+
+#middle {
+  width: 36%;
+}
+
+#right {
+  width: 15%;
+}
+#right > div i {
+  font-size: 20px;
+  font-weight: 200;
+  padding-top: 5px;
+
+}
+
+#left > span {
+  color: white;
+  font-size: 1px;
+}
+
+.button {
+  padding: 10px 10px 10px 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 3px solid transparent;
+}
+
+#middle label {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-left: 5%;
+}
+
+#middle input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#right {
+  justify-content: space-around;
+  margin-left: 10%;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+section {
+  width: 300px;
+  height: 150vh;
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: none;
+  position: relative;
+  float: left;
+  margin-top: -90px;
+}

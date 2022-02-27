@@ -3,6 +3,7 @@ function navbar() {
     <div id="navbar" class="flex">
     <div id="left" class="flex material-icons">
     <span class="material-icons">menu</span>
+
     <div>
         <p id="zara">ZARA HOME</p>
     </div>
