@@ -1,7 +1,8 @@
-#container {
+#bathcontainer {
     width: 105%;
     margin: auto;
     text-align: center;
+    margin-top: 6%;
   
   }
   body{
@@ -13,7 +14,7 @@
     margin: auto; */
   }
   
-  #container{
+  #bathcontainer{
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows:repeat(10, 450px);

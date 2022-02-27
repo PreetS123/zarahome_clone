@@ -57,7 +57,7 @@ function navbar() {
                     <li><a href="#">ACCESSORIES </a></li>
                 </ul>
 
-                <li id="living-btn"><a href="#">LIVING ROOM </a>
+                <li id="living-btn"><a href="/Living room/livingroom.html">LIVING ROOM </a>
                         <ul id="living">
                             <li><a href="#"> FURNITURE & RUGS</a></li>
                             <li><a href="#"> PHOTO FRAMES</a></li>
@@ -80,7 +80,7 @@ function navbar() {
                         </ul>
                 </li>
 
-                <li id="bathroom-btn"><a href="#">BATHROOM </a>            
+                <li id="bathroom-btn"><a href="/bedroom/Bathroom/bathroom.html">BATHROOM </a>            
                         <ul id="bathroom">
                             <li><a href="#"> TOWELS</a></li>
                             <li><a href="#">BATHROBES </a></li>
