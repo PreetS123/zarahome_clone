@@ -1,5 +1,5 @@
- import { newIn } from "/Home/scripts/index.js";
- document.getElementById("newin-btn").addEventListener("click", newIn);
+//  import { newIn } from "/Home/scripts/index.js";
+//  document.getElementById("newin-btn").addEventListener("click", newIn);
 // document.getElementById("bedroom-btn").addEventListener("click", dropdown)
 // document.getElementById("clothing-btn").addEventListener("click", Clothing)
 // document.getElementById("living-btn").addEventListener("click", Living)
@@ -10,7 +10,7 @@
 // document.getElementById("info-btn").addEventListener("click", Info)
 
 
- document.getElementById("newin").style.display="none";
+//  document.getElementById("newin").style.display="none";
 // document.getElementById("bedroom").style.display="none";
 // document.getElementById("clothing").style.display="none";
 // document.getElementById("living").style.display="none";
@@ -20,7 +20,7 @@
 // document.getElementById("stories").style.display="none";
 // document.getElementById("info").style.display="none"
 
- newIn();
+//  newIn();
 // dropdown();
 // Living();
 // Bathroom();

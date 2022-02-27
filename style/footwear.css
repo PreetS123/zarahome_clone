@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: rgb(26, 26, 26);
   }
 #container_div{
-    border: 1px solid transparent;
+    /* border: 1px solid red; */
     margin: 30px;
     margin-top: 0px;
 }

@@ -6,6 +6,7 @@
   background-position: center; */
   /* background-repeat: no-repeat; */
   overflow: hidden;
+  border:1px solid red;
 }
 #navbar {
   margin: auto;
