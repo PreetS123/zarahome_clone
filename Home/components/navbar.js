@@ -1,8 +1,11 @@
 function navbar() {
     return `
     <div id="navbar" class="flex">
-    <div id="left" class="flex material-icons">
-    <span>menu</span>
+    <div id="left" class="flex ">
+    <div class="material-icons" >
+
+      menu
+      </div>
     <div>
         <p id="zara">ZARA HOME</p>
     </div>
