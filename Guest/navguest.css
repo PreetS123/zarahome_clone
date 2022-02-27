@@ -109,7 +109,7 @@ section {
   position: relative;
   float: left;
   margin-top: -90px;
-  border:2px solid red;
+  /* border:2px solid red; */
 }
 #nav-div:hover section {
   width: 330px;
