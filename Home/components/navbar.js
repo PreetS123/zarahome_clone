@@ -35,7 +35,7 @@ function navbar() {
                 </li>
 
 
-                <li id="bedroom-btn"><a href="#">BEDROOM </a>
+                <li id="bedroom-btn"><a href="/bedroom/bedroom.html">BEDROOM </a>
                     <ul id="bedroom">
                         <li><a href="#">DUVET COVERS </a></li>
                         <li><a href="#">FLAT SHEETS </a></li>
