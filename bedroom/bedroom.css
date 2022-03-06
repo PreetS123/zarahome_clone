@@ -1,8 +1,8 @@
-#container {
+#bedcontainer {
   width: 95%;
   margin: auto;
   text-align: center;
-
+margin-top: 6%;
 }
 body{
   font-family: ZH-Sans,Arial,'Lucida Sans Unicode',sans-serif;
@@ -11,7 +11,7 @@ body{
   word-spacing: 2px;
 }
 
-#container{
+#bedcontainer{
   display: grid;
   grid-template-columns: repeat(2, 49%);
   grid-template-rows:repeat(10, 450px);

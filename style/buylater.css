@@ -4,16 +4,15 @@
     box-sizing: border-box;
     font-family: ZH-Sans,Arial,'Lucida Sans Unicode',sans-serif;
 }
-#buy-container{
+#container{
+    border: 1px solid black;
     padding: 0px 30px;
-  
 }
 #top{
     border-bottom: 1px solid rgb(216, 216, 216);
-    height: 50px;
+    height: 150px;
     display: flex;
     align-items: flex-end;
-   
 }
 #SHOPPING-BASKET{
     flex: 10;
