@@ -52,7 +52,7 @@ function navbar() {
                 <ul id="clothing">
                     <li><a href="#">WOMEN </a></li>
                     <li><a href="#">MEN </a></li>
-                    <li><a href="#">FOOTWARE </a></li>
+                    <li><a href="/footwear/footwear.html">FOOTWARE </a></li>
                     <li><a href="#">ACCESSORIES </a></li>
                 </ul>
 

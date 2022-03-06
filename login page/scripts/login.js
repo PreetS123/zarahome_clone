@@ -29,5 +29,5 @@ function signin(event) {
 
 document.getElementById("container").addEventListener("click",close);
 function close(){
-        document.getElementById("login_container").style.display = "none";
+        // document.getElementById("login_container").style.display = "none";
 }

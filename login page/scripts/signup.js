@@ -69,15 +69,15 @@ function Register() {
         alert("Invalid Credintials");
     }
 }
-document.getElementById("signin_container").style.display = "block";
+// document.getElementById("signin_container").style.display = "block";
 
-document.getElementById("container").addEventListener("click",close);
-function close(){
-        document.getElementById("signin_container").style.display = "none";
+// document.getElementById("container").addEventListener("click",close);
+// function close(){
+//         document.getElementById("signin_container").style.display = "none";
 
-document.getElementById("signin_container").addEventListener("click",()=>{
-    document.getElementById("signin_container").style.display = "block";
+// document.getElementById("signin_container").addEventListener("click",()=>{
+//     document.getElementById("signin_container").style.display = "block";
 
-})
-}
+// })
+// }
 
